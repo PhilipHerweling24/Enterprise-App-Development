@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Countries</title>
+        <meta charset="UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+        <link href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
+        <link href="/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <section id="table" class="table">
+
+                  <div class="container">
+                    <div class="row">
+                      <button id="slideToggleBtn">Toggle Slide</button>
+                      <h2 id="slideToggleHeader">Country Data Table</h2>
+                      <button id="fadeToggleBtn">Toggle Fade</button>
+                      <p id="fadeToggleParagraph">This website alllows you to click the load files button to generate a table wich will display countries data.
+                        the table also uses jquery to implement pagination so the data is easily sorted, searchable and looks cleaner. With pagination you can also 
+                        choose how many rows you want displayed. The show images button when pressed will then display the flags converting them from url's to images.
+                      </p>
+                      <div class="section-title" data-aos="fade-up">
+                        <button id="load-files" type="button" class="btn btn-success">Load Files</button>
+                      </div>
+
+                      <table id= "myTable" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Country</th>
+                            <th>Continent</th>
+                            <th>Currency Name</th>
+                            <th>Internet Domain</th>
+                            <th>Flag</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                      </table>
+
+                      <div id='container'></div>
+                  </div>
+            </div>
+          </section>
+          <script defer src="script.js"></script>
+    </body>
+
+
+</html>

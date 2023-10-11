@@ -1,0 +1,51 @@
+.container {
+  max-width: 80%; 
+  margin: 0 auto;   
+  padding: 20px;    
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+td img.flag-image {
+    max-width: 50px; 
+    height: 30px;    
+    display: block;  
+    margin: 0 auto;  
+  }
+
+#container {
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
