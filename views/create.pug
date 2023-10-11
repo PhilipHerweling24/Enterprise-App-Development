@@ -1,0 +1,32 @@
+extends layout 
+
+block content
+
+     h1 Create a New Colour!
+     h4 Fill out the form below to add the new colour!
+
+     p(id='msg' style={'display': 'none'}) New Colour Was Successfuly Created!
+
+     .button-container
+          button(type='button' class='btn btn-primary') 
+               a(href='/colours') Back to HomePage
+
+     .form-container
+          form(id='createForm')
+               label(for='name') Colour Name: 
+               input(id='name' type='text' class="form-control" placeholder='Colour Name' name='name' required)
+
+               label(for='hex') HEX String: 
+               input(id='hex' type='text' class="form-control" placeholder='HEX String' name='hexString' required)
+
+               label(for='rgb') RGB Value: 
+               input(id='r' type='text' class="form-control" placeholder='R Value' name='r' required) 
+               input(id='g' type='text' class="form-control" placeholder='G Value' name='g' required)
+               input(id='b' type='text' class="form-control" placeholder='B Value' name='b' required)
+
+               label(for='hsl') HSL Value: 
+               input(id='h' type='text' class="form-control" placeholder='H Value' name='h' required)
+               input(id='s' type='text' class="form-control" placeholder='S Value' name='s' required)
+               input(id='l' type='text' class="form-control" placeholder='L Value' name='l' required)
+
+               button(class='btn btn-primary' type='submit' id='createSubmit') Create Colour!
